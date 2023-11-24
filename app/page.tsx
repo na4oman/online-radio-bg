@@ -1,14 +1,7 @@
 'use client'
 /* eslint-disable react/jsx-no-comment-textnodes */
-import NavMenu from '@/components/NavMenu'
 import ProductList from '@/components/ProductList'
 import Container from '@/components/ui/container'
-// import {
-//   // products,
-//   stations,
-//   // uk_stations,
-//   // us_stations,
-// } from '@/constants/constants.js'
 import { useState } from 'react'
 import SelectGenre from '@/components/SelectGenre'
 import { Radio } from '@/types.js'
@@ -815,7 +808,6 @@ export default function Home() {
 
   return (
     <Container>
-      <NavMenu />
       <div className='flex justify-center gap-4'>
         <SelectGenre setFilteredGenre={setFilteredGenre} />
         <Input
