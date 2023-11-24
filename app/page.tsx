@@ -6,6 +6,7 @@ import { useState } from 'react'
 import SelectGenre from '@/components/SelectGenre'
 import { Radio } from '@/types.js'
 import { Input } from '@/components/ui/input'
+import NavMenu from '@/components/NavMenu'
 
 const stations = [
   {
@@ -808,6 +809,7 @@ export default function Home() {
 
   return (
     <Container>
+      <NavMenu />
       <div className='flex justify-center gap-4'>
         <SelectGenre setFilteredGenre={setFilteredGenre} />
         <Input
