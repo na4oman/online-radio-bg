@@ -16,14 +16,14 @@ import {
 import Link from 'next/link'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ModeToggle } from './ModeToggle'
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet'
+// import {
+//   Sheet,
+//   SheetContent,
+//   SheetDescription,
+//   SheetHeader,
+//   SheetTitle,
+//   SheetTrigger,
+// } from '@/components/ui/sheet'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { ShoppingCart, Heart, Sun, Moon } from 'lucide-react'
 import { Badge } from './ui/badge'
@@ -81,8 +81,8 @@ export default function NavMenu() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className='flex justify-between items-center py-6'>
-      <div className='md:hidden'>
+    <nav className='flex justify-between items-center py-6 px-4 sm:px-0'>
+      {/* <div className='md:hidden'>
         <Sheet>
           <SheetTrigger>
             <AiOutlineMenu />
@@ -97,7 +97,7 @@ export default function NavMenu() {
             </SheetHeader>
           </SheetContent>
         </Sheet>
-      </div>
+      </div> */}
       <Link href='/' className='flex justify-center items-center gap-2'>
         <Image
           src='/radio.jpeg'
@@ -107,7 +107,7 @@ export default function NavMenu() {
         />
         <span>Online Radio</span>
       </Link>
-      <div className='text-4xl font-bold'>Online Radio</div>
+      <div className='text-2xl sm:text-4xl font-bold'>Online Radio</div>
       {/* <NavigationMenu className='hidden md:block'>
         <NavigationMenuList>
           <NavigationMenuItem>

@@ -42,7 +42,7 @@ const RadioCard: React.FC<RadioCard> = ({ product }) => {
       target='_blank'
     >
       <Card
-        className='border-2 shadow-sm hover:shadow-md dark:shadow-slate-500 rounded-none w-[200px]'
+        className='border-2 shadow-sm hover:shadow-md dark:shadow-slate-500 rounded-none w-[200px] mx-auto'
         // onClick={() => setUrl(product.radio_url)}
         // onClick={() => router.push(product.radio_url)}
       >
