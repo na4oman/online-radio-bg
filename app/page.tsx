@@ -4,11 +4,11 @@ import NavMenu from '@/components/NavMenu'
 import ProductList from '@/components/ProductList'
 import Container from '@/components/ui/container'
 import {
-  products,
+  // products,
   stations,
   // uk_stations,
   // us_stations,
-} from '/constants/constants.js'
+} from '../constants/constants.js'
 import { useState } from 'react'
 import SelectGenre from '@/components/SelectGenre'
 import { Radio } from '@/types.js'
