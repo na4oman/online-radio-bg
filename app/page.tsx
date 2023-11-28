@@ -7,6 +7,7 @@ import SelectGenre from '@/components/SelectGenre'
 import { Radio } from '@/types.js'
 import { Input } from '@/components/ui/input'
 import NavMenu from '@/components/NavMenu'
+import Footer from '@/components/Footer'
 
 const stations = [
   {
@@ -830,6 +831,7 @@ export default function Home() {
         <ProductList items={filteredData} />
       )}
       {/* {<ProductList items={filteredData} />} */}
+      <Footer />
     </Container>
   )
 }
