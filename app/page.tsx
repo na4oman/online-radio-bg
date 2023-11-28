@@ -783,7 +783,7 @@ export default function Home() {
   const [filteredGenre, setFilteredGenre] = useState('')
   // const [items, setItems] = useState(stations)
   const [search, setSearch] = useState('')
-  const [url, setUrl] = useState('')
+  // const [url, setUrl] = useState('')
 
   // console.log(stations)
   // const renderedStations = us_stations.slice(0, 100)
@@ -810,7 +810,7 @@ export default function Home() {
   return (
     <Container>
       <NavMenu />
-      <div className='flex justify-center gap-4'>
+      <div className='flex flex-col sm:flex-row items-center sm:items-baseline justify-center gap-2 sm:gap-4 mb-4'>
         <SelectGenre setFilteredGenre={setFilteredGenre} />
         <Input
           type='text'

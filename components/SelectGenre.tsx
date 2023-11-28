@@ -26,7 +26,7 @@ const SelectGenre: React.FC<SelectGenreProps> = ({ setFilteredGenre }) => {
   return (
     <Select onValueChange={handleChange}>
       {/* <Select> */}
-      <SelectTrigger className='w-[250px] mb-4'>
+      <SelectTrigger className='w-[250px]'>
         <SelectValue placeholder='---Select a Genre---' />
       </SelectTrigger>
       <SelectContent>

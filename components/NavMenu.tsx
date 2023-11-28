@@ -105,7 +105,7 @@ export default function NavMenu() {
           width={35}
           height={35}
         />
-        <span>Online Radio</span>
+        <span className='hidden sm:block'>Online Radio</span>
       </Link>
       <div className='text-2xl sm:text-4xl font-bold'>Online Radio</div>
       {/* <NavigationMenu className='hidden md:block'>

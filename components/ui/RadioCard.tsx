@@ -42,12 +42,12 @@ const RadioCard: React.FC<RadioCard> = ({ product }) => {
       target='_blank'
     >
       <Card
-        className='border-2 shadow-sm hover:shadow-md dark:shadow-slate-500 rounded-none w-[200px] mx-auto'
+        className='border-2 rounded-none w-[180px] sm:w-[200px] mx-auto shadow-sm hover:shadow-md dark:shadow-slate-500 transition-all'
         // onClick={() => setUrl(product.radio_url)}
         // onClick={() => router.push(product.radio_url)}
       >
         <CardContent className='p-1'>
-          <div className='w-[190px] h-[100px] relative bg-foreground/5 dark:bg-background '>
+          <div className='w-[170px] sm:w-[190px] h-[100px] relative bg-foreground/5 dark:bg-background '>
             <Image
               // src='https://images.unsplash.com/photo-1598743400863-0201c7e1445b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               src={product.radio_image}
